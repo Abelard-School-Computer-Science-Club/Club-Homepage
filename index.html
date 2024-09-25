@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Club | Abelard School</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: #1f1f1f;
+            font-family: 'Poppins', sans-serif;
+            color: #ccc;
+            scroll-behavior: smooth;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #2a2a2a;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #f0f0f0;
+        }
+        p, li {
+            line-height: 1.6;
+            margin-bottom: 20px;
+            color: #ccc;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #333;
+            color: white;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #222;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .btn:hover {
+            background-color: #333;
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2a2a2a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #555;
+            border-radius: 6px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Computer Science Club</h1>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>The Computer Science Club is a community of tech enthusiasts passionate about programming, networking, and learning together.</p>
+            <p>Weekly Coding Workshops - Every Friday at 12:30 PM - 1:00 PM</p>
+        </section>
+
+        <section id="contents">
+            <h2>Contents</h2>
+            <nav>
+                <ul>
+                    <li><a href="#intro-programming" class="btn">1. Introduction to Programming</a></li>
+                    <li><a href="#web-dev" class="btn">2. Web Development Basics</a></li>
+                    <li><a href="#algorithms" class="btn">3. Algorithms and Data Structures</a></li>
+                    <li><a href="#resources" class="btn">4. Additional Learning Resources</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="intro-programming">
+            <h2>Introduction to Programming</h2>
+            <p>Learn the basics of programming languages like Python and JavaScript. Understand variables, control flow, functions, and loops.</p>
+        </section>
+
+        <section id="web-dev">
+            <h2>Web Development Basics</h2>
+            <p>Explore the fundamentals of web development including HTML, CSS, and JavaScript to build interactive websites.</p>
+        </section>
+
+        <section id="algorithms">
+            <h2>Algorithms and Data Structures</h2>
+            <p>Dive into key concepts of algorithms, including sorting, searching, and understanding different types of data structures like arrays, linked lists, and trees.</p>
+        </section>
+
+        <section id="resources">
+            <h2>Additional Learning Resources</h2>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank" class="btn">W3Schools</a> - Free tutorials on web development.</li>
+                <li><a href="https://www.codecademy.com/" target="_blank" class="btn">Codecademy</a> - Learn various programming languages interactively.</li>
+                <li><a href="https://www.khanacademy.org/computing/computer-programming" target="_blank" class="btn">Khan Academy</a> - Free programming courses on many topics.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <ul>
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=amuratov@abelardschool.org" target="_blank" class="btn">amuratov@abelardschool.org</a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=brandys@abelardschool.org" target="_blank" class="btn">brandys@abelardschool.org</a></li>
+                <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=jmoncarz@abelardschool.org" target="_blank" class="btn">jmoncarz@abelardschool.org</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Computer Science Club. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
+</body>
+</html>
