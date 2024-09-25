@@ -4,9 +4,8 @@ html, body {
     padding: 0;
     background-color: #1f1f1f;
     font-family: 'Poppins', sans-serif;
-    color: #ccc;
+    color: #333; /* Darker text for better contrast */
     scroll-behavior: smooth;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 body {
@@ -20,15 +19,16 @@ ul {
 }
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: #d2cdb8; /* Header color */
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-header .btn {
-    margin-top: 10px;
+header h1 {
+    color: #1f1f1f; /* Black text for header */
+    font-weight: 600; /* Match the weight of the rest of the text */
+    margin: 0; /* Remove default margin */
 }
 
 nav ul {
@@ -44,13 +44,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #1f1f1f; /* Dark text for links */
     text-decoration: none;
     font-size: 18px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Keep underline on hover if needed */
+    color: #d2cdb8; /* Change color on hover */
 }
 
 main {
@@ -61,19 +62,18 @@ main {
     background-color: #2a2a2a;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
-    transition: background-color 0.3s;
 }
 
-h1, h2 {
+h2 {
     text-align: center;
     margin-bottom: 20px;
-    color: #f0f0f0;
+    color: #d2cdb8; /* Use the theme color for headings */
 }
 
 p, li {
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #ccc;
+    color: #ccc; /* Light text for readability */
     text-align: center;
 }
 
@@ -88,21 +88,24 @@ footer {
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #222;
-    color: white;
-    text-decoration: none;
+    background-color: #d2cdb8; /* Button background color */
+    color: #1f1f1f; /* Dark text for buttons */
+    text-decoration: none; /* Remove underline */
     border-radius: 10px;
     border: none;
     font-size: 16px;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Add color to transition */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 15px 0; /* Add vertical spacing */
 }
 
 .btn:hover {
-    background-color: #333;
+    background-color: #b3a99a; /* Slightly darker on hover */
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    color: #fff; /* Change hover text color to white */
+    text-decoration: none; /* Ensure no underline on hover */
 }
 
 section {
@@ -113,27 +116,16 @@ section {
 ::-webkit-scrollbar {
     width: 12px;
 }
+
 ::-webkit-scrollbar-track {
     background: #2a2a2a;
 }
+
 ::-webkit-scrollbar-thumb {
     background: #555;
     border-radius: 6px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
     background: #777;
-}
-
-/* Light theme styles */
-body.light {
-    background-color: #f0f0f0;
-    color: #333;
-}
-body.light header,
-body.light footer {
-    background-color: #ddd;
-    color: #333;
-}
-body.light main {
-    background-color: #fff;
 }
