@@ -1,0 +1,131 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Darker text for better contrast */
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header {
+    background-color: #d2cdb8; /* Header color */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    color: #1f1f1f; /* Black text for header */
+    font-weight: 600; /* Match the weight of the rest of the text */
+    margin: 0; /* Remove default margin */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #1f1f1f; /* Dark text for links */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Keep underline on hover if needed */
+    color: #b3a99a; /* Darker color on hover */
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #e0e0e0; /* Lighter color for headings */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p, li {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #ccc; /* Light text for readability */
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d2cdb8; /* Button background color */
+    color: #1f1f1f; /* Dark text for buttons */
+    text-decoration: none; /* Remove underline */
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Add color to transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: 15px 0; /* Add vertical spacing */
+}
+
+.btn:hover {
+    background-color: #b3a99a; /* Slightly darker on hover */
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    color: #fff; /* Change hover text color to white */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2a2a2a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #777;
+}
