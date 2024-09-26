@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | Abelard Computer Science Club</title>
+    <link rel="icon" href="{{ '/assets/favicon.jpg' | relative_url }}" sizes="16x16" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/styles.css' | relative_url }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Computer Science Club</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li> <!-- Link to the blog page -->
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Abelard School Computer Science Club. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ '/assets/script.js' | relative_url }}"></script>
+</body>
+</html>

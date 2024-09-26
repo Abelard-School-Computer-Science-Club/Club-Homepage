@@ -51,7 +51,7 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline; /* Keep underline on hover if needed */
-    color: #d2cdb8; /* Change color on hover */
+    color: #b3a99a; /* Darker color on hover */
 }
 
 main {
@@ -64,10 +64,10 @@ main {
     border-radius: 10px;
 }
 
-h2 {
+h1, h2 {
+    color: #e0e0e0; /* Lighter color for headings */
     text-align: center;
     margin-bottom: 20px;
-    color: #d2cdb8; /* Use the theme color for headings */
 }
 
 p, li {
