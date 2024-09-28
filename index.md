@@ -1,12 +1,14 @@
 ---
 layout: default
-title: "Home"
+title: Abelard School Computer Science Club
 ---
-<section id="about">
-    <h2>About Us</h2>
-    <p>The Computer Science Club is a community of tech enthusiasts passionate about programming, networking, and learning together.</p>
-    <p>Weekly Coding Workshops - Every Friday at 12:30 PM - 1:00 PM</p>
-</section>
+
+## About Us
+The Computer Science Club is a community of tech enthusiasts passionate about programming, networking, and learning together.
+
+Weekly Coding Workshops - Every Friday at 12:30 PM - 1:00 PM
+
+## Contents
 
 <section id="contents">
     <h2>Contents</h2>
