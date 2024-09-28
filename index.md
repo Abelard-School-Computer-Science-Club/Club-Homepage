@@ -8,8 +8,6 @@ The Computer Science Club is a community of tech enthusiasts passionate about pr
 
 Weekly Coding Workshops - Every Friday at 12:30 PM - 1:00 PM
 
-## Contents
-
 <section id="contents">
     <h2>Contents</h2>
     <nav>
