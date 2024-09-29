@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Abelard School Computer Science Club
+title: Homepage
 ---
 
 ## About Us
