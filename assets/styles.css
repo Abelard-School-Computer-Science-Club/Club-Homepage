@@ -2,15 +2,22 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #1f1f1f;
+    background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
     font-family: 'Poppins', sans-serif;
-    color: #333; /* Darker text for better contrast */
+    color: #e0e0e0; /* Lighter text for better contrast */
     scroll-behavior: smooth;
 }
 
 body {
     display: flex;
     flex-direction: column;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 ul {
@@ -19,16 +26,18 @@ ul {
 }
 
 header {
-    background-color: #d2cdb8; /* Header color */
+    background: linear-gradient(90deg, #d2cdb8, #b3a99a);
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 header h1 {
-    color: #1f1f1f; /* Black text for header */
-    font-weight: 600; /* Match the weight of the rest of the text */
-    margin: 0; /* Remove default margin */
+    color: #1f1f1f;
+    font-weight: 700; /* Heavier for more impact */
+    margin: 0;
+    letter-spacing: 2px;
 }
 
 nav ul {
@@ -44,74 +53,82 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #1f1f1f; /* Dark text for links */
+    color: #1f1f1f;
     text-decoration: none;
     font-size: 18px;
+    position: relative;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Keep underline on hover if needed */
-    color: #b3a99a; /* Darker color on hover */
+    color: #b3a99a;
+    border-bottom: 2px solid #b3a99a;
 }
 
 main {
     flex: 1;
     margin: 40px auto;
-    padding: 20px;
-    background-color: #2a2a2a;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    background: rgba(42, 42, 42, 0.9); /* Add slight transparency */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
+    animation: slideUp 1.2s ease;
+}
+
+/* Animation for sliding up content */
+@keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
 }
 
 h1, h2, h3 {
-    color: #e0e0e0; /* Lighter color for headings */
+    color: #ffcc00; /* Bright, fun color for headings */
     text-align: center;
     margin-bottom: 20px;
 }
 
 p, li {
-    line-height: 1.6;
+    line-height: 1.8;
     margin-bottom: 20px;
-    color: #ccc; /* Light text for readability */
+    color: #ccc;
     text-align: center;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
+    background: linear-gradient(90deg, #333, #444);
     color: white;
     width: 100%;
 }
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #d2cdb8; /* Button background color */
-    color: #1f1f1f; /* Dark text for buttons */
-    text-decoration: none; /* Remove underline */
-    border-radius: 10px;
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #d2cdb8, #b3a99a);
+    color: #1f1f1f;
+    text-decoration: none;
+    border-radius: 12px;
     border: none;
-    font-size: 16px;
-    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Add color to transition */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    margin: 15px 0; /* Add vertical spacing */
+    font-size: 18px;
+    transition: transform 0.4s, box-shadow 0.4s, background-color 0.4s, color 0.4s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    margin: 20px 0;
 }
 
 .btn:hover {
-    background-color: #b3a99a; /* Slightly darker on hover */
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(90deg, #b3a99a, #8f8575);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     cursor: pointer;
-    color: #fff; /* Change hover text color to white */
-    text-decoration: none; /* Ensure no underline on hover */
+    color: #fff;
 }
 
 section {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
-/* Custom scrollbar */
+/* Fun Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
 }
@@ -121,10 +138,10 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #555;
+    background: linear-gradient(90deg, #d2cdb8, #b3a99a);
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #777;
+    background: linear-gradient(90deg, #b3a99a, #8f8575);
 }
