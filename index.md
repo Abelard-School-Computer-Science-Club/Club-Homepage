@@ -48,7 +48,7 @@ Weekly Coding Workshops - Every Friday at 12:30 PM - 1:00 PM
     <h2>Contact Us</h2>
     <h3>Socals</h3>
         <ul>
-            <li><a href="https://discord.gg/JvTk2faVT4" target="_blank" class="btn">Discord Server</a></li>
+            <li><a href="https://discord.gg/z2EEsPsTaQ" target="_blank" class="btn">Discord Server</a></li>
             <li><a href="https://github.com/Abelard-School-Computer-Science-Club" target="_blank" class="btn">Github</a></li>
         </ul>
     <h3>Email</h3>
