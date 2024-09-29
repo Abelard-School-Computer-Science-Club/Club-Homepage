@@ -5,6 +5,8 @@ title: Announcements
 
 # Announcements
 
+<ul>
 {% for post in site.announcements %}
-  {% include post.html post=post %}
+<li><a href="{{ post.url }}" class="btn">{{ post.title }}</a></li>
 {% endfor %}
+</ul>

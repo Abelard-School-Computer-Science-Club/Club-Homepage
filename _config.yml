@@ -2,3 +2,9 @@ title: "Abelard School Computer Science Club"
 baseurl: ""
 url: "https://abelardcompsci.com"
 permalink: pretty
+
+collections:
+  announcements:
+    output: true
+  updates:
+    output: true
