@@ -14,7 +14,6 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
-/* Animation for fade-in effect */
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -35,7 +34,7 @@ header {
 
 header h1 {
     color: #1f1f1f;
-    font-weight: 700; /* Heavier for more impact */
+    font-weight: 700;
     margin: 0;
     letter-spacing: 2px;
 }
@@ -69,20 +68,19 @@ main {
     flex: 1;
     margin: 40px auto;
     padding: 30px;
-    background: rgba(42, 42, 42, 0.9); /* Add slight transparency */
+    background: rgba(42, 42, 42, 0.9);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     animation: slideUp 1.2s ease;
 }
 
-/* Animation for sliding up content */
 @keyframes slideUp {
     0% { transform: translateY(50px); opacity: 0; }
     100% { transform: translateY(0); opacity: 1; }
 }
 
 h1, h2, h3 {
-    color: #ffcc00; /* Bright, fun color for headings */
+    color: #ffcc00;
     text-align: center;
     margin-bottom: 20px;
 }
