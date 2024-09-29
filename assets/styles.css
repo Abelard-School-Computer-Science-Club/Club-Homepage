@@ -64,7 +64,7 @@ main {
     border-radius: 10px;
 }
 
-h1, h2 {
+h1, h2, h3 {
     color: #e0e0e0; /* Lighter color for headings */
     text-align: center;
     margin-bottom: 20px;
