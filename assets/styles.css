@@ -150,3 +150,50 @@ section {
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(90deg, #f06595, #d45075);
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Add some padding for smaller screens */
+    }
+
+    header {
+        padding: 15px; /* Adjust padding for the header */
+    }
+
+    header h1 {
+        font-size: 24px; /* Smaller font size for the header title */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        margin-bottom: 10px; /* Reduce margin */
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Margin between stacked items */
+    }
+
+    main {
+        margin: 20px auto; /* Reduce margin for main content */
+        padding: 20px; /* Adjust padding for main content */
+    }
+
+    h1, h2, h3 {
+        font-size: 20px; /* Smaller font size for headings */
+    }
+
+    p, li {
+        font-size: 16px; /* Adjust font size for better readability */
+    }
+
+    .btn {
+        width: 100%; /* Full-width buttons for better touch targets */
+        padding: 10px; /* Adjust padding */
+        font-size: 16px; /* Smaller font size for buttons */
+    }
+
+    footer {
+        padding: 15px 0; /* Adjust footer padding */
+    }
+}
