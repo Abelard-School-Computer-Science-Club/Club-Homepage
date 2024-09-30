@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: announcement
 title: "First Club Meeting"
 date: 2024-09-28
 ---
