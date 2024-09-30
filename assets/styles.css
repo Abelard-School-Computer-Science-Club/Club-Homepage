@@ -2,16 +2,18 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1f1f1f, #2a2a2a);
     font-family: 'Poppins', sans-serif;
-    color: #e0e0e0; /* Lighter text for better contrast */
+    color: #f0f0f0; /* Light text for better contrast */
     scroll-behavior: smooth;
 }
 
 body {
+    min-height: 100vh; /* Ensures body covers full viewport height */
+    background: linear-gradient(135deg, #282c34, #404552); /* Darker background with a slight blue tone */
     display: flex;
     flex-direction: column;
     animation: fadeIn 1s ease-in-out;
+    background-attachment: fixed; /* Prevents background duplication */
 }
 
 @keyframes fadeIn {
@@ -25,50 +27,55 @@ ul {
 }
 
 header {
-    background: linear-gradient(90deg, #d2cdb8, #b3a99a);
+    background: linear-gradient(90deg, #ff6b6b, #f06595); /* Vivid gradient of red and pink */
     padding: 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-    color: #1f1f1f;
+    color: #ffffff; /* White text for the header */
     font-weight: 700;
     margin: 0;
     letter-spacing: 2px;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    margin-bottom: 20px;
+header nav ul {
+    display: flex; /* Use flexbox to arrange items side by side */
+    justify-content: center; /* Center the items */
+    padding: 0; /* Reset padding */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+header nav ul li {
+    display: inline; /* Ensure list items are inline */
+    margin: 0 15px; /* Margin between the buttons */
 }
 
-nav ul li a {
-    color: #1f1f1f;
+header nav ul li a {
+    display: inline-block; /* Ensures the anchor behaves like a button */
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #ff6b6b, #f06595);
+    color: #ffffff;
     text-decoration: none;
+    border-radius: 12px;
     font-size: 18px;
-    position: relative;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    transition: transform 0.4s, box-shadow 0.4s, background-color 0.4s, color 0.4s;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
-nav ul li a:hover {
-    color: #b3a99a;
-    border-bottom: 2px solid #b3a99a;
+header nav ul li a:hover {
+    background: linear-gradient(90deg, #f06595, #d45075);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    color: #fff;
 }
 
 main {
     flex: 1;
     margin: 40px auto;
     padding: 30px;
-    background: rgba(42, 42, 42, 0.9);
+    background: rgba(64, 69, 82, 0.9); /* Slightly transparent dark background */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     animation: slideUp 1.2s ease;
@@ -80,7 +87,7 @@ main {
 }
 
 h1, h2, h3 {
-    color: #ffcc00;
+    color: #f06595; /* Pink color for headings */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -88,14 +95,14 @@ h1, h2, h3 {
 p, li {
     line-height: 1.8;
     margin-bottom: 20px;
-    color: #ccc;
+    color: #e0e0e0; /* Light gray text */
     text-align: center;
 }
 
 footer {
     text-align: center;
     padding: 10px 0;
-    background: linear-gradient(90deg, #333, #444);
+    background: linear-gradient(90deg, #6a4c93, #9b5de5); /* Purple gradient for the footer */
     color: white;
     width: 100%;
 }
@@ -103,8 +110,8 @@ footer {
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background: linear-gradient(90deg, #d2cdb8, #b3a99a);
-    color: #1f1f1f;
+    background: linear-gradient(90deg, #ff6b6b, #f06595); /* Red and pink gradient for buttons */
+    color: #ffffff;
     text-decoration: none;
     border-radius: 12px;
     border: none;
@@ -115,7 +122,7 @@ footer {
 }
 
 .btn:hover {
-    background: linear-gradient(90deg, #b3a99a, #8f8575);
+    background: linear-gradient(90deg, #f06595, #d45075); /* Darker pink and red on hover */
     transform: translateY(-6px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     cursor: pointer;
@@ -126,20 +133,20 @@ section {
     margin-bottom: 50px;
 }
 
-/* Fun Custom Scrollbar */
+/* Custom Scrollbar */
 ::-webkit-scrollbar {
     width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #2a2a2a;
+    background: #404552;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(90deg, #d2cdb8, #b3a99a);
+    background: linear-gradient(90deg, #ff6b6b, #f06595);
     border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(90deg, #b3a99a, #8f8575);
+    background: linear-gradient(90deg, #f06595, #d45075);
 }
